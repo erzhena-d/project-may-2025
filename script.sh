@@ -28,6 +28,8 @@ function update_hosts() {
     terraform output -raw ec2 > ../ansible/hosts
 }
 update_hosts
+echo "wait 20 sec"
+sleep 20
 
 function install_apps() {
     cd ../ansible
